@@ -1,0 +1,28 @@
+.form {
+  width: 700px;
+  background-color: #2a51d1;
+  opacity: 1;
+  background-image: linear-gradient(
+      #ffffff 3.4000000000000004px,
+      transparent 3.4000000000000004px
+    ),
+    linear-gradient(
+      90deg,
+      #ffffff 3.4000000000000004px,
+      transparent 3.4000000000000004px
+    ),
+    linear-gradient(
+      #ffffff 1.7000000000000002px,
+      transparent 1.7000000000000002px
+    ),
+    linear-gradient(
+      90deg,
+      #ffffff 1.7000000000000002px,
+      #2a51d1 1.7000000000000002px
+    );
+  background-size: 85px 85px, 85px 85px, 17px 17px, 17px 17px;
+  background-position: -3.4000000000000004px -3.4000000000000004px,
+    -3.4000000000000004px -3.4000000000000004px,
+    -1.7000000000000002px -1.7000000000000002px,
+    -1.7000000000000002px -1.7000000000000002px;
+}
