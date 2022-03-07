@@ -1,4 +1,5 @@
 {
+  "homepage": "https://ltdatphan.github.io/smart-detection",
   "name": "smart-detection",
   "version": "0.1.0",
   "private": true,
@@ -8,7 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.2",
+    "react-scripts": "^5.0.0",
     "react-tilty": "^2.0.3",
     "react-tsparticles": "^1.41.4",
     "tachyons": "^4.12.0",
@@ -18,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -37,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
