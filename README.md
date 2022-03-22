@@ -3,9 +3,11 @@ This project is a web application that users can use Clarifai API to detect face
   
 The live project is available [here](https://github.com/ltdatphan/smart-detection-api/). (Registration and Login might be slow at first due to cold start).
 
+![image](https://user-images.githubusercontent.com/29266892/159513596-15e16b40-767f-4338-8dcf-39edb2b95749.png)
+
 # Features
 - Responsive front-end with account registration and login forms
-- Database for storing user's login credentials with password hashing and their number of submissions. 
+- Database for storing users login credentials with password hashing and their number of submissions. 
 - Back-end that handles account logins, registrations and API calls
 
 # Technologies used
@@ -22,5 +24,5 @@ The live project is available [here](https://github.com/ltdatphan/smart-detectio
 - PostgreSQL
 
 ## API 
-- [Clarifai](https://www.clarifai.com/)
+- [Clarifai](https://www.clarifai.com/) by using a face detection model
 
