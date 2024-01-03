@@ -24,17 +24,17 @@ class Register extends React.Component {
 
   onSubmitSignIn = () => {
     const { email, password, name } = this.state;
-    if ( !email || !password || !name ) {
+    if (!email || !password || !name) {
       console.log("Error: Empty inputs!");
       return;
     }
-    fetch("http://localhost:3000/register", {
+    fetch(`${process.env.REACT_APP_BASE_BACKEND_URL}/register`, {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         email,
         password,
-        name
+        name,
       }),
     })
       .then((response) => response.json())
@@ -44,11 +44,11 @@ class Register extends React.Component {
           this.props.onRouteChange("home");
         }
       })
-    .catch(err => console.log(err));
+      .catch((err) => console.log(err));
   };
 
   render() {
-    const { onRouteChange } = this.props;
+    // const { onRouteChange } = this.props;
     return (
       <article className="br3 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center frosted">
         <main className="pa4 black-80">

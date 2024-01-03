@@ -1,6 +1,5 @@
 import React from "react";
 import "./SignIn.css";
-import Logo from "../../components/Logo/Logo";
 
 class SignIn extends React.Component {
   constructor(props) {
@@ -27,7 +26,7 @@ class SignIn extends React.Component {
       return;
     }
 
-    fetch("http://localhost:3000/signin", {
+    fetch(`${process.env.REACT_APP_BASE_BACKEND_URL}/signin`, {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -41,8 +40,12 @@ class SignIn extends React.Component {
           this.props.loadUser(user);
           this.props.onRouteChange("home");
         }
+      })
+      .catch(err => {
+        console.log(err);
       });
   };
+
 
   render() {
     return (
@@ -51,7 +54,6 @@ class SignIn extends React.Component {
           <h1
             className="f1"
             style={{
-              fontFamily: "'Bungee Hairline', cursive",
               fontFamily: "'Bungee Outline', cursive",
             }}
           >

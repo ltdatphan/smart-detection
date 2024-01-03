@@ -20,8 +20,8 @@ const initalState = {
     name: "",
     email: "",
     entries: 0,
-    joined: ""
-  }
+    joined: "",
+  },
 };
 
 class App extends Component {
@@ -85,7 +85,7 @@ class App extends Component {
   onButtonSubmit = () => {
     this.setState({ imageUrl: this.state.input });
     const { id, name, email } = this.state.user;
-    fetch("http://localhost:3000/detect", {
+    fetch(`${process.env.REACT_APP_BASE_BACKEND_URL}/detect`, {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -98,7 +98,7 @@ class App extends Component {
       .then((response) => response.json())
       .then((data1) => {
         if (data1) {
-          fetch("http://localhost:3000/image", {
+          fetch(`${process.env.REACT_APP_BASE_BACKEND_URL}/image`, {
             method: "put",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -113,9 +113,9 @@ class App extends Component {
         }
 
         if (
-          data1 == "no face found" ||
-          data1 == "invalid request" ||
-          data1 == "unable to identify user"
+          data1 === "no face found" ||
+          data1 === "invalid request" ||
+          data1 === "unable to identify user"
         ) {
           this.displayBoundingBox([]);
         } else {

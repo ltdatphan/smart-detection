@@ -4,7 +4,7 @@ import "./FaceRecognition.css";
 const FaceRecognition = ({ imageUrl, box }) => {
   return (
     <div>
-      {imageUrl !== "" && box.length == 0 ? (
+      {imageUrl !== "" && box.length === 0 ? (
         <h1 className="white f1">No faces found</h1>
       ) : (
         <h1 className="white f1">
