@@ -1,17 +1,15 @@
 {
   "files": {
-    "main.css": "/smart-detection/static/css/main.f8420601.css",
-    "main.js": "/smart-detection/static/js/main.cf70d16c.js",
-    "static/js/415.8e101800.chunk.js": "/smart-detection/static/js/415.8e101800.chunk.js",
-    "static/js/787.7a58d12b.chunk.js": "/smart-detection/static/js/787.7a58d12b.chunk.js",
+    "main.css": "/smart-detection/static/css/main.c7a627c5.css",
+    "main.js": "/smart-detection/static/js/main.394bebdb.js",
+    "static/js/496.24eb2746.chunk.js": "/smart-detection/static/js/496.24eb2746.chunk.js",
     "index.html": "/smart-detection/index.html",
-    "main.f8420601.css.map": "/smart-detection/static/css/main.f8420601.css.map",
-    "main.cf70d16c.js.map": "/smart-detection/static/js/main.cf70d16c.js.map",
-    "415.8e101800.chunk.js.map": "/smart-detection/static/js/415.8e101800.chunk.js.map",
-    "787.7a58d12b.chunk.js.map": "/smart-detection/static/js/787.7a58d12b.chunk.js.map"
+    "main.c7a627c5.css.map": "/smart-detection/static/css/main.c7a627c5.css.map",
+    "main.394bebdb.js.map": "/smart-detection/static/js/main.394bebdb.js.map",
+    "496.24eb2746.chunk.js.map": "/smart-detection/static/js/496.24eb2746.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8420601.css",
-    "static/js/main.cf70d16c.js"
+    "static/css/main.c7a627c5.css",
+    "static/js/main.394bebdb.js"
   ]
 }
